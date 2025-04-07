@@ -31,3 +31,31 @@ btn2.addEventListener('click', function () {
         document.getElementById("res2").innerHTML = calculo;
     }
 });
+
+/*Exercicio 3*/
+
+var distancia_percorrida = document.getElementById("distancia_percorrida");
+var tempo_gasto = document.getElementById("tempo_gasto");
+var velocidade_media = 0;
+
+
+
+var btn3 = document.getElementById('btn3');
+btn3.addEventListener('click', function () {
+    distancia_percorrida = parseFloat(distancia_percorrida.value);
+    tempo_gasto = parseFloat(tempo_gasto.value);
+    velocidade_media = (distancia_percorrida/tempo_gasto)
+    document.getElementById("res3").innerHTML = "<b>A velocidade media é: "+ velocidade_media +"Km/h </b>";
+});
+/*Exercicio 4*/ 
+var Farenheit = document.getElementById("Farenheit");
+var Celcius = 0;
+
+var btn4 = document.getElementById('btn4');
+btn4.addEventListener('click', function () {
+Farenheit = parseFloat(Farenheit.value);
+Celcius = parseFloat(Celcius.value)
+Celcius = (Farenheit -32) * 1.8;
+    document.getElementById("res4").innerHTML = 'A temperatura em Celcius é: ' + Celcius+"°";
+});
+/*Exercicio 11*/

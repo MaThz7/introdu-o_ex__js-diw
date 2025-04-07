@@ -95,24 +95,25 @@
 
 
         <!-- 3ª Questão  -->
+
         <div class="row my-4">
             <h5> 3 - Sabendo que a velocidade linear é calculada pela seguinte equação velocidade=distancia/tempo. Desenvolva um algoritmo que receba os valores relativos a distancia e tempo, calcule e mostre o valor da velocidade média.</h5>
             <div class="row">
                 <div class="col-3">
                   <label for="distancia_percorrida" class="form-label">Distância Percorrida:</label> 
-                  <input type="text" class="form-control" placeholder="informe a distancia em km">
+                  <input type="text" id="distancia_percorrida" class="form-control" placeholder="informe a distancia em km">
                 </div>
                 <div class="col-3">
                   <label for="distancia_percorrida" class="form-label">Tempo Gasto:</label> 
-                  <input type="text" class="form-control" placeholder="informe o tempo em horas">
+                  <input type="text" id="tempo_gasto" class="form-control" placeholder="informe o tempo em horas">
                 </div>
                 <div class="col-1">
                     <br/>
-                    <button type="button" class="btn btn-primary">Calcular</button>
+                    <button type="button" id="btn3" class="btn btn-primary">Calcular</button>
                 </div>
                 <div class="col-5">
                     <br/>
-                    <span> Resultado da Questão 3</span>
+                    <span id="res3"> Resultado da Questão 3</span>
                 </div>
             </div>
         </div>
@@ -123,15 +124,15 @@
             <div class="row">
                 <div class="col-3">
                   <label for="temperatura_farenheit" class="form-label">Temperatura Fº:</label> 
-                  <input type="text" class="form-control" placeholder="informe a temperatura em Fº">
+                  <input type="text" id="Farenheit" class="form-control" placeholder="informe a temperatura em Fº">
                 </div>
                 <div class="col-1">
                     <br/>
-                    <button type="button" class="btn btn-primary">Calcular</button>
+                    <button type="button" id="btn4" class="btn btn-primary">Calcular</button>
                 </div>
                 <div class="col-5">
                     <br/>
-                    <span> Resultado da Questão 4</span>
+                    <span id="res4"> Resultado da Questão 4</span>
                 </div>
             </div>
         </div>
@@ -246,7 +247,7 @@
             <div class="row">
                 <div class="col-4">
                     <ul class="list-group">
-                        <li class="list-group-item">1 - Aventura</li>
+                        <li class="list-group-item"><a href="opcoes.html?id=1&nome=Matheus">1 - Aventura</a></li>
                         <li class="list-group-item">2 - Luta</li>
                         <li class="list-group-item">3 - Corrida</li>
                         <li class="list-group-item">4 - Esportes</li>
